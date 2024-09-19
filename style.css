@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--main-fg-color) ;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --main-bg-color: #062925;
+    --text-color: #b8e1dd;
+    --main-fg-color: #b8e1dd;
+    
+}
+
+.color{
+    color: var(--main-bg-color)
+}
