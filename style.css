@@ -1,9 +1,16 @@
-body{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: var(--dark-blue) ;
     font-family: "Poppins", sans-serif;
+    height: 100vh;
 }
 
 :root{
@@ -61,15 +68,30 @@ nav{
 
 /* Mobil nézet beállítása */
 @media (max-width: 991.98px) {
+    .navbar {
+        padding: 0;
+    }
+    
     .navbar-collapse {
-        justify-content: center; /* Középre igazítás */
+        justify-content: flex-end;
+        width: 100%; /* A menü szélességének százalékos beállítása */
     }
     .navbar-nav {
-        flex-direction: column; /* Oszlopban elrendezés */
-        align-items: center; /* Középre igazítás */
-        width: 100%; /* Teljes szélesség */
+        flex-direction: column;
+        align-items: center;
+        width: 400px; /* A lenyíló menü szélessége */
+        padding: 0;
+        background-color: rgb(14, 14, 63); /* Átlátszó háttér */
+        position: absolute; /* A lenyíló menü pozíciója */
+        top: 60px; /* A lenyitó gomb alatti elhelyezés */
+        right: 20px; /* Jobb oldalhoz igazítás */
+        border-radius: 10px;
+        transition: max-height 0.5s ease-in-out;
     }
     .nav-link {
-        padding: 15px; /* Nagyobb padding a könnyebb kattintáshoz */
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
     }
 }
