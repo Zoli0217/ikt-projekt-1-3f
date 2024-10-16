@@ -9,9 +9,16 @@ body, html{
 }
 
 :root{
-    --dark-blue: #16325B;
+    --dark-blue: #0e111c;
     --light-blue: #78B7D0;
     --nav-border: aqua;  
+    --color-blue-dark: #405ded;
+    --color-blue-light: #0ea2e0;
+}
+
+main{
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 main header{
@@ -22,6 +29,11 @@ main header{
     height: 100vh;
     
 }
+
+.sep{
+    height: 3px; 
+    background-image: linear-gradient(to right, #0111f3, #00f7ff, #28f305, #0111f3);
+  }
 
 #section-2{
     height: 100vh;
@@ -47,3 +59,4 @@ main h1, h3{
         height: 300px;
     }
 }
+
