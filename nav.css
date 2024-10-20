@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+:root{
+    --dark-blue: #0e111c;
+    --light-blue: #78B7D0;
+    --nav-border: aqua;  
+    --color-blue-dark: #405ded;
+    --color-blue-light: #0ea2e0;
+}
+
 nav{
     border-bottom: 2px solid var(--light-blue);
     background-color: var(--dark-blue);
@@ -37,7 +45,7 @@ nav{
     border-radius: 5px;
     transform: translateX(-50%) scale(0);
     transition: transform 0.5s ease; 
-  }
+}
 
 .nav-link:hover::after {
     transform: translateX(-50%) scale(1);
@@ -50,7 +58,7 @@ nav{
 }
 
 
-/* Mobil nézet beállítása */
+
 @media (max-width: 991.98px) {
     .navbar {
         padding: 0;
@@ -58,17 +66,17 @@ nav{
     
     .navbar-collapse {
         justify-content: flex-end;
-        width: 100%; /* A menü szélességének százalékos beállítása */
+        width: 100%; /
     }
     .navbar-nav {
         flex-direction: column;
         align-items: center;
-        width: 400px; /* A lenyíló menü szélessége */
+        width: 400px; 
         padding: 0;
-        background-color: rgb(14, 14, 63); /* Átlátszó háttér */
-        position: absolute; /* A lenyíló menü pozíciója */
-        top: 60px; /* A lenyitó gomb alatti elhelyezés */
-        right: 20px; /* Jobb oldalhoz igazítás */
+        background-color: rgb(14, 14, 63);
+        position: absolute;
+        top: 60px; 
+        right: 20px; 
         border-radius: 10px;
         transition: max-height 0.5s ease-in-out;
     }
