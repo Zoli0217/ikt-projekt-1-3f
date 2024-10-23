@@ -58,40 +58,50 @@
               <div class="col-lg-5 col-12">
                 <div class="imageholder">
                   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     </div>
-                    
-                    
-                    <div class="carousel-inner" >
-                      <div class="carousel-item active" >
-                        <img src="images/timsortCode.png" class="d-block w-100" >
+                  
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="images/timsortCode.png" class="d-block w-100" data-bs-toggle="modal" data-bs-target="#imageModal">
                       </div>
-                      <div class="carousel-item" >
-                        <img src="images/timsort2.png" class="d-block w-100" >
+                      <div class="carousel-item">
+                        <img src="images/timsort2.png" class="d-block w-100" data-bs-toggle="modal" data-bs-target="#imageModal">
                       </div>
-                      <div class="carousel-item" >
-                        <img src="images/timsort3.png" class="d-block w-100" >
+                      <div class="carousel-item">
+                        <img src="images/timsort3.png" class="d-block w-100" data-bs-toggle="modal" data-bs-target="#imageModal">
                       </div>
-                      <div class="carousel-item" >
-                        <img src="images/timsort4.png" class="d-block w-100" >
+                      <div class="carousel-item">
+                        <img src="images/timsort4.png" class="d-block w-100" data-bs-toggle="modal" data-bs-target="#imageModal">
                       </div>
                     </div>
                   
-                    
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
+                      <span class="visually-hidden">Előző</span>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
+                      <span class="visually-hidden">Következő</span>
                     </button>
-                    
+                  </div>
+                  
+                  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="imageModalLabel">Nagyított Kép</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img id="modalImage" src="" class="img-fluid" alt="Nagyított Kép">
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <img src="images/timsortIllustration2.png" alt="TimSort szemléltető ábra" width="500px" class="img-fluid" padding-top="40px">
                 </div>
@@ -139,5 +149,6 @@
     </footer>
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
